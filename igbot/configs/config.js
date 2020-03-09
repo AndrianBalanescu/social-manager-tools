@@ -17,14 +17,14 @@ module.exports = {
     // [WORK] likemode_competitor_users - select account, select random followers, like 10-12 photo and sleep 15-20min.
     // [WORK] comment_mode              - leave a comment under the photo via hashtag.
     // [WORK] fdfmode_classic           - follow 30 users, and defollow the first followed at 31 follow (in loop). This method is not detected from socialblade. ~1h | 300/300 follow-defollow/day.
-    "bot_mode": "likemode_realistic",
+    "bot_mode": "fdfmode_classic",
     "bot_likeday_min": 700, // work in all likemode_*
     "bot_likeday_max": 800, // work in all likemode_*. In 2018 limit instagram is 1000/day
     "bot_sleep_night": false, // if you need stop bot in night
     "bot_start_sleep": "7:00", // sleep from 00:00 to 7:00 am, work in likemode_realistic, comment_mode, likemode_superlike and likemode_competitor_users
     "bot_superlike_n": 3, // superlike number of likes for user
     "bot_followday": 300, // number of follow-defollow user/day, work in fdfmode_classic. In 2018 limit instagram is 500/day
-    "bot_followrotate": 30, // follow 30 users, and defollow the first followed at 31 follow (in loop), work in fdfmode_classic | If is 0 defollow all followed previously by bot
+    "bot_followrotate": 0, // follow 30 users, and defollow the first followed at 31 follow (in loop), work in fdfmode_classic | If is 0 defollow all followed previously by bot
     "bot_userwhitelist": ["user1", "user2", "user3"], // usernames without @ | don't defollow this users on follow-defollow mode, work in fdfmode_classic
     "comment_mode": {
         "comments": {
